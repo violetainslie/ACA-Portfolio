@@ -28,7 +28,8 @@ body {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    height: 3.62vw;
+    height: 3.62vw !important;
+    overflow-y: hidden;
 }
 
 .back-button {
@@ -36,6 +37,10 @@ body {
     width: 2vw;
     height: 2vw;
     transition: .25s;
+    aspect-ratio: 32.41 / 30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .back-button:hover {
@@ -46,6 +51,8 @@ body {
     text-decoration: none;
     font-size: 1.5vw;
     overflow: visible;
+    text-align: center;
+    aspect-ratio: 32.41 / 30;
 }
 
 .current-page {
@@ -55,4 +62,10 @@ body {
 .name {
     font-size: 1vw;
     text-transform: uppercase;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    display: inline-block;
+    width: 100%;
 }
